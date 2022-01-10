@@ -12,7 +12,7 @@ int main() {
     myfile.open ("../cpu_temperature.txt");
 
     for (int i = 0; i < 30; ++i) {
-        FILE* fcputemp = fopen("/sys/class/thermal/thermal_zone1/temp","r");
+        FILE* fcputemp = fopen("/sys/class/thermal/thermal_zone5/temp","r");
         int cputemp;
         while(!feof(fcputemp)){
             fscanf(fcputemp, "%d", &cputemp);
