@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    for (int i = 0; i < 50; ++i) {
+    for (int i = 0; i < 25; ++i) {
         ofstream myfile;
         myfile.open ("../cpu_temperature.txt", ios_base::app);
 
@@ -28,6 +28,6 @@ int main() {
             sleep(2);
         }
         myfile.close();
-        sleep(120);
+        sleep(300);
     }
 }
